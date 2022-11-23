@@ -1,0 +1,7 @@
+#For all profiles
+
+server:
+ port: 9020
+spring:
+ application:
+  name: service-registry
