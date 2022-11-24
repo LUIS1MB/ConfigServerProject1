@@ -1,0 +1,14 @@
+#For all profiles
+
+server:
+ port: 9030
+spring:
+ application:
+  name: api-gateway
+ cloud:
+  gateway:
+   routes:
+   - id: service-client
+     uri: lb://service-client
+     predicates:
+     - Path=/api/service-client/**
