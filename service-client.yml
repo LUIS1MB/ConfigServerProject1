@@ -1,0 +1,26 @@
+#For all profiles
+
+server:
+ port: 9040
+spring:
+ application:
+  name: service-client
+
+#dev
+---
+spring:
+ profiles: dev
+ datasource:
+  url: jdbc:mysql://localhost:3306/dbproject1
+  username: root
+  password: admin
+
+
+#docker
+---
+spring:
+ profiles: docker
+ datasource:
+  url: jdbc:mysql://host.docker.internal:3306/dbproject1
+  username: root
+  password: admin 
