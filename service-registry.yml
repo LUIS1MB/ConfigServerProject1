@@ -5,3 +5,8 @@ server:
 spring:
  application:
   name: service-registry
+
+eureka: 
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
